@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:neuromonics/views/Hearing_Testing_Screen.dart';
+import 'package:neuromonics/views/MonicsIntro.dart';
+import 'package:neuromonics/views/PlayingTone.dart';
 import 'package:neuromonics/views/haering_Test_check01.dart';
 import 'package:neuromonics/views/haering_Test_check02.dart';
+import 'package:neuromonics/views/test_begin.dart';
 // import 'package:neuromonics/views/Clinicain_connect.dart';
 // import 'package:neuromonics/views/Create_Account.dart';
 // import 'package:neuromonics/views/Create_Password.dart';
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: TestHear(),
+      home: Monicsintro(),
     );
   }
 }
