@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/views/AdjustHearTest/adjust_hear_test.dart';
 
-class Adjustedheartest extends StatefulWidget {
-  const Adjustedheartest({super.key});
+class HearingFlowTest extends StatefulWidget {
+  const HearingFlowTest({super.key});
 
   @override
-  State<Adjustedheartest> createState() => _AdjustedheartestState();
+  State<HearingFlowTest> createState() => _HearingFlowTestState();
 }
 
-class _AdjustedheartestState extends State<Adjustedheartest> {
-  double _currentVolume = 1.5;
-  @override
+class _HearingFlowTestState extends State<HearingFlowTest> {
+  double _currentVolume = 0.5;
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;
     final width = MediaQuery.sizeOf(context).width * 1;
@@ -106,18 +107,21 @@ class _AdjustedheartestState extends State<Adjustedheartest> {
                 left: width * 0.075,
                 right: width * 0.075,
                 bottom: height * 0.015),
-            child: Container(
-              height: height * 0.08,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(153, 39, 37, 37),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const Text(
-                "I have Adjusted the Volume",
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Color.fromARGB(255, 9, 115, 202),
+            child: InkWell(
+              onTap: () => Get.to(const AdjustHearTest()),
+              child: Container(
+                height: height * 0.08,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(153, 39, 37, 37),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Text(
+                  "Play Test Tone",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 9, 115, 202),
+                  ),
                 ),
               ),
             ),

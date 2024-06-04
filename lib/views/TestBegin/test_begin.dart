@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:neuromonics/views/PlayingTone/playing_tone.dart';
+import 'package:get/get.dart';
 
 class BeginTest extends StatefulWidget {
   const BeginTest({super.key});
@@ -36,22 +38,27 @@ class _BeginTestState extends State<BeginTest> {
           SizedBox(
             height: height * 0.12,
           ),
-          Container(
-            margin: EdgeInsets.only(
-                left: width * 0.01, right: width * 0.01, top: height * 0.15),
-            height: height * 0.45,
-            width: width * 1,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 71, 70, 70),
-              borderRadius: BorderRadius.circular(width * 0.05),
-            ),
-            child: const Text(
-              "Start the Test",
-              style: TextStyle(
-                color: Color.fromARGB(255, 9, 119, 209),
-                fontSize: 14,
-                fontWeight: FontWeight.w700,
+          InkWell(
+            onTap: () {
+              Get.to(const Playingtone());
+            },
+            child: Container(
+              margin: EdgeInsets.only(
+                  left: width * 0.01, right: width * 0.01, top: height * 0.15),
+              height: height * 0.45,
+              width: width * 1,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 71, 70, 70),
+                borderRadius: BorderRadius.circular(width * 0.05),
+              ),
+              child: const Text(
+                "Start the Test",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 9, 119, 209),
+                  fontSize: 14,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
             ),
           ),

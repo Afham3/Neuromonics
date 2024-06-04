@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ClinicainConnect extends StatefulWidget {
-  const ClinicainConnect({super.key});
+class ConnectClinician extends StatefulWidget {
+  const ConnectClinician({super.key});
 
   @override
-  State<ClinicainConnect> createState() => _ClinicainConnectState();
+  State<ConnectClinician> createState() => _ConnectClinicianState();
 }
 
-class _ClinicainConnectState extends State<ClinicainConnect> {
+class _ConnectClinicianState extends State<ConnectClinician> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/utils/Routes/routes_name.dart';
+import 'package:neuromonics/views/SetName/set_name.dart';
 
 class CreatePassword extends StatefulWidget {
   const CreatePassword({super.key});
@@ -166,18 +169,21 @@ class _CreatePasswordState extends State<CreatePassword> {
                 left: width * 0.075,
                 right: width * 0.075,
                 bottom: height * 0.015),
-            child: Container(
-              height: height * 0.08,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(153, 39, 37, 37),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const Text(
-                "Continue",
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Color.fromARGB(255, 9, 115, 202),
+            child: InkWell(
+              onTap: () => Get.to(const SetName()),
+              child: Container(
+                height: height * 0.08,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(153, 39, 37, 37),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Text(
+                  "Continue",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 9, 115, 202),
+                  ),
                 ),
               ),
             ),

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/views/HearingTest/hearing_test.dart';
 
-class HearingTest extends StatefulWidget {
-  const HearingTest({super.key});
+class Questionnaire extends StatefulWidget {
+  const Questionnaire({super.key});
 
   @override
-  State<HearingTest> createState() => _HearingTestState();
+  State<Questionnaire> createState() => _QuestionnaireState();
 }
 
-class _HearingTestState extends State<HearingTest> {
+class _QuestionnaireState extends State<Questionnaire> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;
@@ -36,7 +38,7 @@ class _HearingTestState extends State<HearingTest> {
                           height: height * 0.03,
                         ),
                         const Text(
-                          "Step 3 of 3",
+                          "Step 2 of 3",
                           style: TextStyle(
                               color: Color.fromARGB(255, 5, 138, 247),
                               fontSize: 12,
@@ -61,7 +63,7 @@ class _HearingTestState extends State<HearingTest> {
                               color: Color.fromARGB(255, 122, 113, 113),
                             ),
                             Text(
-                              "5-10 Mins",
+                              "3-5 Mins",
                               style: TextStyle(
                                 fontSize: 13,
                                 color: Color.fromARGB(255, 163, 158, 158),
@@ -70,7 +72,7 @@ class _HearingTestState extends State<HearingTest> {
                           ],
                         ),
                         const Text(
-                          "Hearing \nTest",
+                          "Tinnitus \nQuestionnaire",
                           textAlign: TextAlign.justify,
                           style: TextStyle(
                             fontSize: 32,
@@ -98,18 +100,21 @@ class _HearingTestState extends State<HearingTest> {
                         right: width * 0.075,
                         bottom: height * 0.015,
                         top: height * 0.025),
-                    child: Container(
-                      height: height * 0.07,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(153, 39, 37, 37),
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: const Text(
-                        "Start Hearing Test",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 9, 115, 202),
+                    child: InkWell(
+                      onTap: () => Get.to(const HearingTest()),
+                      child: Container(
+                        height: height * 0.07,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(153, 39, 37, 37),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: const Text(
+                          "Start Questionnaire",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Color.fromARGB(255, 9, 115, 202),
+                          ),
                         ),
                       ),
                     ),

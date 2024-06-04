@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/views/Questionnaire/questionnaire.dart';
 
 class Characterisation extends StatefulWidget {
   const Characterisation({super.key});
@@ -140,18 +142,21 @@ class _CharacterisationState extends State<Characterisation> {
                 right: width * 0.075,
                 bottom: height * 0.015,
                 top: height * 0.025),
-            child: Container(
-              height: height * 0.07,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(153, 39, 37, 37),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const Text(
-                "Continue",
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Color.fromARGB(255, 9, 115, 202),
+            child: InkWell(
+              onTap: () => Get.to(const Questionnaire()),
+              child: Container(
+                height: height * 0.07,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(153, 39, 37, 37),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Text(
+                  "Continue",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 9, 115, 202),
+                  ),
                 ),
               ),
             ),

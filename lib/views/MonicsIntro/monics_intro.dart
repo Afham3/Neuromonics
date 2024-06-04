@@ -1,15 +1,13 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
-class Monicsintro extends StatefulWidget {
-  const Monicsintro({super.key});
+class MonicsIntro extends StatefulWidget {
+  const MonicsIntro({super.key});
 
   @override
-  State<Monicsintro> createState() => _MonicsintroState();
+  State<MonicsIntro> createState() => _MonicsIntroState();
 }
 
-class _MonicsintroState extends State<Monicsintro> {
+class _MonicsIntroState extends State<MonicsIntro> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 1;

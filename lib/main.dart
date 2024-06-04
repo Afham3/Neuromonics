@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:neuromonics/views/Hearing_Testing_Screen.dart';
-import 'package:neuromonics/views/MonicsIntro.dart';
-import 'package:neuromonics/views/PlayingTone.dart';
-import 'package:neuromonics/views/haering_Test_check01.dart';
-import 'package:neuromonics/views/haering_Test_check02.dart';
-import 'package:neuromonics/views/test_begin.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/views/CreateAccount/create_account.dart';
+import 'package:neuromonics/views/MonicsIntro/monics_intro.dart';
 // import 'package:neuromonics/views/Clinicain_connect.dart';
 // import 'package:neuromonics/views/Create_Account.dart';
 // import 'package:neuromonics/views/Create_Password.dart';
@@ -23,14 +20,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Neuromonics',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Monicsintro(),
+      home: const CreateAccount(),
     );
   }
 }
