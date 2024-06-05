@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:neuromonics/views/CodeVerification/verify_code.dart';
+import 'package:get/get.dart';
+import 'package:neuromonics/views/Dashboard/dashboard.dart';
 
 class ConnectClinician extends StatefulWidget {
   const ConnectClinician({super.key});
@@ -75,18 +78,23 @@ class _ConnectClinicianState extends State<ConnectClinician> {
                       left: width * 0.075,
                       right: width * 0.075,
                     ),
-                    child: Container(
-                      height: height * 0.07,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 9, 115, 202),
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: const Text(
-                        "I have been Invited by Clinician",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
+                    child: InkWell(
+                      onTap: () {
+                        // Get.to(const Dashboard());
+                      },
+                      child: Container(
+                        height: height * 0.07,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 9, 115, 202),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: const Text(
+                          "I have been Invited by Clinician",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
@@ -99,18 +107,21 @@ class _ConnectClinicianState extends State<ConnectClinician> {
                       left: width * 0.075,
                       right: width * 0.075,
                     ),
-                    child: Container(
-                      height: height * 0.07,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: const Text(
-                        "I need to Find a Clinician",
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromARGB(255, 9, 115, 202),
-                            fontWeight: FontWeight.w400),
+                    child: InkWell(
+                      onTap: () => Get.to(const CodeVerification()),
+                      child: Container(
+                        height: height * 0.07,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: const Text(
+                          "I need to Find a Clinician",
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromARGB(255, 9, 115, 202),
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ),
                   ),

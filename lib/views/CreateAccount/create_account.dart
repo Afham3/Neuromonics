@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:neuromonics/utils/Routes/routes_call.dart';
-import 'package:neuromonics/utils/Routes/routes_name.dart';
+// import 'package:neuromonics/utils/Routes/routes_call.dart';
+// import 'package:neuromonics/utils/Routes/routes_name.dart';
 import 'package:neuromonics/views/CreatePassword/create_password.dart';
 
 class CreateAccount extends StatefulWidget {

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:neuromonics/views/CreateAccount/create_account.dart';
-import 'package:neuromonics/views/MonicsIntro/monics_intro.dart';
+import 'package:neuromonics/views/DailyListening/daily_listening.dart';
+import 'package:neuromonics/views/Dashboard/dashboard.dart';
+import 'package:neuromonics/views/MonicsWeeks/monics.weeks.dart';
+import 'package:neuromonics/views/ProgramPage/app_program.dart';
+import 'package:neuromonics/views/TreatmentSetup/treatment_setup.dart';
 // import 'package:neuromonics/views/Clinicain_connect.dart';
 // import 'package:neuromonics/views/Create_Account.dart';
 // import 'package:neuromonics/views/Create_Password.dart';
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CreateAccount(),
+      home: const MonicsWeek(),
     );
   }
 }

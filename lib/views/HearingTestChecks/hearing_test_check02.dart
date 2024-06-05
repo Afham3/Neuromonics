@@ -77,13 +77,13 @@ class _HearingTestCheckState extends State<HearingTestCheck> {
             ),
           ),
           SizedBox(
-            height: height * 0.1,
+            height: height * 0.05,
           ),
           Padding(
             padding: EdgeInsets.only(
-                left: width * 0.075,
-                right: width * 0.075,
-                bottom: height * 0.015),
+              left: width * 0.075,
+              right: width * 0.075,
+            ),
             child: InkWell(
               onTap: () => Get.to(const HearingFlowTest()),
               child: Container(

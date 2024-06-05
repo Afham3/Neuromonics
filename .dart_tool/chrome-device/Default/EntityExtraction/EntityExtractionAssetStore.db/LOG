@@ -1,3 +1,2 @@
-2024/06/03-00:51:05.342 3f74 Reusing MANIFEST C:\Users\AFHAMN~1\AppData\Local\Temp\flutter_tools.c5f0ebd0\flutter_tools_chrome_device.e9029a3d\Default\EntityExtractionAssetStore.db/MANIFEST-000001
-2024/06/03-00:51:05.347 3f74 Recovering log #3
-2024/06/03-00:51:05.350 3f74 Reusing old log C:\Users\AFHAMN~1\AppData\Local\Temp\flutter_tools.c5f0ebd0\flutter_tools_chrome_device.e9029a3d\Default\EntityExtractionAssetStore.db/000003.log 
+2024/06/05-06:18:09.378 34bc Creating DB C:\Users\AFHAMN~1\AppData\Local\Temp\flutter_tools.6025c934\flutter_tools_chrome_device.81398129\Default\EntityExtractionAssetStore.db since it was missing.
+2024/06/05-06:18:10.299 34bc Reusing MANIFEST C:\Users\AFHAMN~1\AppData\Local\Temp\flutter_tools.6025c934\flutter_tools_chrome_device.81398129\Default\EntityExtractionAssetStore.db/MANIFEST-000001

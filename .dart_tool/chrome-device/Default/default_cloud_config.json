@@ -283,20 +283,22 @@
       "appName": "growth_engine",
       "data": {
          "remote_upsell_config": {
-            "is_full_screen": true,
-            "max_version": 128,
-            "min_version": 122,
-            "operation_id": 1,
-            "remote_scfre_page": "edgeRemoteScfreDemo",
-            "target_user_profile": {
-               "operation_debug_user": true
-            }
+            "upsell_list": [ {
+               "id": 1,
+               "is_full_screen": true,
+               "max_version": 128,
+               "min_version": 122,
+               "remote_scfre_page": "edgeRemoteScfreDemo",
+               "target_user_profile": {
+                  "growth_engine_debug_user": true
+               }
+            } ]
          }
       },
       "effectStrategy": "launch",
       "instanceId": "4a69a034b30744209270b9f63a1edeeb",
       "type": "normal",
-      "version": "1001"
+      "version": "1002"
    } ],
-   "version": "202406040001"
+   "version": "202406050001"
 }
